@@ -41,8 +41,6 @@ test('test', async ({ page, browserName}) => {
     await page.getByRole('link', { name: 'Złóż zamówienie' }).click();
     await expect(page).toHaveURL('https://www.doz.pl/koszyk/potwierdzenie');
 
-    await page.getByText('Nowe zamówienie')
-
     console.log(await page.video().path());
 
     await page.screenshot({ path: 'screen-doz-search-add-and-order-'+browserName+'.png', fullPage: true });
