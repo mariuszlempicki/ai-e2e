@@ -8,6 +8,8 @@ pipeline {
     stage('install playwright') {
       steps {
         sh '''
+          pwd
+          whoami
           npm i -D @playwright/test
           npx playwright install
           npx playwright install-deps
@@ -22,6 +24,8 @@ pipeline {
     stage('run tests') {
       steps {
         sh '''
+          pwd
+          whoami
           npx playwright test
         '''
       }
