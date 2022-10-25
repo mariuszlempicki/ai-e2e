@@ -11,6 +11,7 @@ pipeline {
           pwd
           whoami
           cat /etc/os-release
+          npm i -D @playwright/test
           npx playwright install
           npx playwright install-deps
         '''
