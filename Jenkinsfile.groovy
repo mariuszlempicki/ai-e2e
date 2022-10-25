@@ -14,15 +14,14 @@ pipeline {
         '''
       }
     }
-    stage('help') {
+    stage('tests list') {
       steps {
-        sh 'npx playwright test --help'
+        sh 'npx playwright test --list'
       }
     }
-    stage('test') {
+    stage('run tests') {
       steps {
         sh '''
-          npx playwright test --list
           npx playwright test
         '''
       }
