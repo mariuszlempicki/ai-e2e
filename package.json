@@ -1,0 +1,21 @@
+{
+  "name": "ai-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariuszlempicki/ai-e2e.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariuszlempicki/ai-e2e/issues"
+  },
+  "homepage": "https://github.com/mariuszlempicki/ai-e2e#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
+  }
+}
