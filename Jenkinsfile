@@ -29,7 +29,7 @@ pipeline {
       post {
         success {
           archiveArtifacts(artifacts: './test-results-screenshots/*.png', followSymlinks: false)
-          sh 'rm -rf ./test-results-screenshots/*.png'
+          sh 'rm -rf *.png'
         }
       }
     }
