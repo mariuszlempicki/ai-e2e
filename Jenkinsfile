@@ -26,7 +26,7 @@ pipeline {
         sh '''
           pwd
           whoami
-          cat /etc/os-release 
+          cat /etc/os-release
           npx playwright test
         '''
       }
