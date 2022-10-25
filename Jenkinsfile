@@ -28,8 +28,8 @@ pipeline {
       }
       post {
         success {
-          archiveArtifacts(artifacts: 'www.odz.pl-*.png', followSymlinks: false)
-          sh 'rm -rf *.png'
+          archiveArtifacts(artifacts: './test-results-screenshots/*.png', followSymlinks: false)
+          sh 'rm -rf ./test-results-screenshots/*.png'
         }
       }
     }
