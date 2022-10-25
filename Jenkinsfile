@@ -10,7 +10,7 @@ pipeline {
         sh '''
           pwd
           whoami
-          npm i -D @playwright/test
+          //npm i -D @playwright/test
           npx playwright install
           npx playwright install-deps
         '''
