@@ -45,7 +45,7 @@ test('test', async ({ page, browserName}) => {
 
     console.log(await page.video().path());
 
-    await page.screenshot({ path: './test-results-screenshots/doz-search-add-and-order-'+browserName+'.png', fullPage: true });
+    await page.screenshot({ path: './test-results-screenshots/screen-doz-search-add-and-order-'+browserName+'.png', fullPage: true });
 
     await page.close();
 
