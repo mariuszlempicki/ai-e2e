@@ -22,9 +22,10 @@ test('test', async ({ page , browserName}) => {
 
     await page.getByText('Witaj w Doz.pl');
 
+    console.log(await page.video().path());
+    
     await page.screenshot({ path: 'screen-doz-login-'+browserName+'.png', fullPage: true });
 
-    console.log(await page.video().path());
 
 
     await page.close();
