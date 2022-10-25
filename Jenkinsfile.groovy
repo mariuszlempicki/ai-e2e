@@ -1,5 +1,6 @@
 pipeline {
-  agent { 
+  agent {
+    label "jenkins-agent"
     docker { 
       image 'mcr.microsoft.com/playwright:v1.17.2-focal'
     } 
@@ -10,7 +11,6 @@ pipeline {
         sh '''
           pwd
           whoami
-          cat /etc/os-release
           npm i -D @playwright/test
           npx playwright install
           npx playwright install-deps
@@ -27,7 +27,6 @@ pipeline {
         sh '''
           pwd
           whoami
-          cat /etc/os-release
           npx playwright test
         '''
       }
