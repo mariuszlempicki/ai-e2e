@@ -24,7 +24,7 @@ test('DOZ.PL: Zalogowanie użytkownika', async ({ page , browserName}) => {
 
     console.log(await page.video().path());
 
-    await page.screenshot({ path: './test-result/screen-doz-login-'+browserName+'.png', fullPage: true });
+    await page.screenshot({ path: 'screen-doz-login-'+browserName+'.png', fullPage: true });
 
     await page.close();
 
