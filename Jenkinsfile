@@ -9,10 +9,8 @@ pipeline {
       steps {
         sh '''
           pwd
-          whoami
           npm i -D @playwright/test
           npx playwright install
-          //npx playwright install-deps
         '''
       }
     }
@@ -25,14 +23,12 @@ pipeline {
       steps {
         sh '''
           pwd
-          whoami
           npx playwright test
         '''
       }
       post {
         always {
           archiveArtifacts(artifacts: 'screen-*.png', followSymlinks: false)
-          //sh 'rm -rf screen-*.png'
         }
       }
     }
