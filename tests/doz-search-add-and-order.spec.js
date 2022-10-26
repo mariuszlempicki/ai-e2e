@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page, browserName}) => {
+test('DOZ.PL: Zamówienie produktu z odbiorem w aptece', async ({ page, browserName}) => {
 
     await page.setViewportSize({ width: 1920, height: 1080 });
 

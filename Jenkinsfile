@@ -36,12 +36,5 @@ pipeline {
         }
       }
     }
-    stage('Show tests report') {
-      steps {
-        sh '''
-         npx playwright show-report
-        '''
-      }
-    }
   }
 }
