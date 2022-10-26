@@ -43,7 +43,7 @@ test('DOZ.PL: Zamówienie produktu z odbiorem w aptece', async ({ page, browserN
 
     console.log(await page.video().path());
 
-    await page.screenshot({ path: 'screen-doz-search-add-and-order-'+browserName+'.png', fullPage: true });
+    await page.screenshot({ path: './test-result/screen-doz-search-add-and-order-'+browserName+'.png', fullPage: true });
 
     await page.close();
 
