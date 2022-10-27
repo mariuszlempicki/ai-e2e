@@ -16,7 +16,7 @@ test('DOZ.PL: Zamówienie produktu z odbiorem w aptece', async ({ page, browserN
     await page.getByRole('link', { name: 'Dodaj do koszyka produkt Apap, 500 mg, tabletki powlekane, 100 szt.' }).click();
     await expect(page).toHaveURL('https://www.doz.pl/apteka/szukaj?search=apap');
 
-    await page.getByRole('link', { name: 'Koszyk 1' }).click();
+    await page.getByRole('link', { name: 'sdsKoszyk 1' }).click();
     await expect(page).toHaveURL('https://www.doz.pl/koszyk');
 
     await page.getByRole('link', { name: 'Dostawa i płatności' }).click();
